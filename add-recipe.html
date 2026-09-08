@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retsept qo'shish — Taomnoma</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Taom<span>noma</span></a>
+    <nav class="primary-nav" aria-label="Asosiy navigatsiya">
+      <a href="index.html">Bosh sahifa</a>
+      <a href="menu.html">Retseptlar</a>
+      <a href="add-recipe.html" aria-current="page">Retsept qo'shish</a>
+      <a href="about.html">Loyiha haqida</a>
+      <a href="team.html">Jamoamiz</a>
+      <a href="support.html">Yordam</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-head">
+    <div class="wrap">
+      <p class="kicker">Jamoaga qo'shiling</p>
+      <h1>O'z retseptingizni ulashing</h1>
+      <p class="lead">Formani to'ldiring — taomingiz haqida qisqacha, ammo yetarlicha aniq ma'lumot bering, boshqalar uni takrorlay olsin.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+
+      <div class="note">
+        Diqqat: bu sahifa statik HTML/CSS namunasi sifatida tayyorlangan. Forma hozircha hech qanday serverga ulanmagan, shu sababli "Retseptni yuborish" tugmasi ma'lumotni hech qayerga jo'natmaydi. Haqiqiy loyihada bu joyga forma qayta ishlovchi (backend) qo'shiladi.
+      </div>
+
+      <form class="form-card" action="#" method="post">
+
+        <fieldset>
+          <legend>Asosiy ma'lumot</legend>
+
+          <div class="field">
+            <label for="title">Retsept nomi</label>
+            <input type="text" id="title" name="title" placeholder="Masalan: Farg'ona oshi" required>
+          </div>
+
+          <div class="two-col">
+            <div class="field">
+              <label for="author">Ismingiz</label>
+              <input type="text" id="author" name="author" placeholder="Masalan: Gulnora" required>
+            </div>
+            <div class="field">
+              <label for="email">Elektron pochta</label>
+              <input type="email" id="email" name="email" placeholder="siz@misol.uz">
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="field">
+              <label for="category">Toifasi</label>
+              <select id="category" name="category">
+                <option>Birinchi taom</option>
+                <option>Ikkinchi taom</option>
+                <option>Non va xamir</option>
+                <option>Salat</option>
+                <option>Shirinlik</option>
+                <option>Ichimlik</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="servings">Necha kishiga</label>
+              <input type="number" id="servings" name="servings" min="1" placeholder="4">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="time">Tayyorlash vaqti</label>
+            <input type="text" id="time" name="time" placeholder="Masalan: 1 soat 30 daqiqa">
+            <span class="hint">Tayyorgarlik va pishirish vaqtini birga yozing.</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tarkibi</legend>
+
+          <div class="field">
+            <label for="ingredients">Ingredientlar</label>
+            <textarea id="ingredients" name="ingredients" placeholder="Har birini yangi qatordan yozing:&#10;500 g guruch&#10;300 g qo'y go'shti&#10;2 dona sabzi"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="steps">Tayyorlash tartibi</label>
+            <textarea id="steps" name="steps" placeholder="Qadamlarni raqamlab yozing:&#10;1. Go'shtni maydalab to'g'rang...&#10;2. Sabzini qovuring..."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="photo">Taom rasmi</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <span class="hint">Ixtiyoriy. JPG yoki PNG formatida.</span>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Retseptni yuborish</button>
+
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Taomnoma</h4>
+        <p>O'zbek taomlari retseptlarini saqlash va ulashish uchun kichik loyiha.</p>
+      </div>
+      <div>
+        <h4>Sahifalar</h4>
+        <ul>
+          <li><a href="menu.html">Retseptlar</a></li>
+          <li><a href="add-recipe.html">Retsept qo'shish</a></li>
+          <li><a href="about.html">Loyiha haqida</a></li>
+          <li><a href="team.html">Jamoamiz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Yordam</h4>
+        <ul>
+          <li><a href="support.html">Ko'p so'raladigan savollar</a></li>
+          <li><a href="support.html#contact">Biz bilan bog'laning</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Taomnoma. Barcha huquqlar himoyalangan.</span>
+      <span>Namuna sifatida yaratilgan sahifa.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
