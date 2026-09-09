@@ -452,3 +452,8 @@ footer.site-footer a:hover{ color: var(--saffron); }
   height: 100px;
   object-fit: cover;
 }
+.ishchi{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
