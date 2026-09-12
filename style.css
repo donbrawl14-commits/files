@@ -183,6 +183,10 @@ nav.primary-nav a[aria-current="page"]{
 
 /* ---------- Sections ---------- */
 
+img{
+  padding: 10px;
+}
+
 section{ padding: 60px 0; }
 section.alt{ background: var(--cream-2); }
 section + section{ border-top: 1px solid var(--line); }
